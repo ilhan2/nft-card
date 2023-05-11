@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--main-bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+p {
+  font-size: 18px;
+}
+
+.container {
+  background-color: var(--card-bg);
+  max-width: 350px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.card {
+  padding: 18px;
+}
+.card img{
+    border-radius: 10px;
+}
+.card .eth {
+  width: 100%;
+  padding-bottom: 12px;
+}
+
+.card .description h2 {
+  color: var(--white);
+  font-weight: 600;
+  padding-bottom: 12px;
+}
+.card .description p {
+  color: var(--soft-blue);
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 12px;
+}
+.description ul {
+  display: flex;
+  justify-content: space-between;
+}
+.description ul li {
+  display: flex;
+  align-items: center;
+}
+.description ul li .font {
+  font-size: 16px;
+}
+.description ul li .blue{
+    color: var(--cyan);
+}
+.description ul li img {
+  padding-bottom: 10px;
+  padding-right: 6px;
+}
+
+.line{
+    border-top: 1px solid var(--line);
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.creator p{
+    padding-left: 10px;
+    font-size: 14px;
+    color: var(--soft-blue);
+}
+.creator span{
+    color: var(--white);
+}
+.creator img {
+  width: 8%;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
